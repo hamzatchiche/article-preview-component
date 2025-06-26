@@ -5,7 +5,7 @@ This project is part of the [Frontend Mentor](https://www.frontendmentor.io/chal
 
 ## 🔗 Live Preview
 
-👉 [View Live Demo](https://hamzatchiche.github.io/article-preview-component/)
+👉 [View Live Demo](https://hamzatchiche.github.io/article-preview-component/dist/)
 
 ## 📂 Repository
 
