@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- fonts google  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Article preview component</title>
+    <link href="./style.css" rel="stylesheet" />
+    
+    <!-- gsap  -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-[var(--LightGrayishBlue)] flex flex-col justify-center items-center font-[var(--manrope)]"
+  >
+    <div
+      class="bg-white w-xs md:w-2xl md:h-64 overflow-hidden flex md:flex-row flex-col  mt-10 md:mt-32 rounded-lg"
+    >
+      <img
+        src="../images/drawers.jpg"
+        alt="drawer image"
+        class="w-full md:w-5/12 h-52 md:h-full object-cover md:rounded-l-lg rounded-t-lg md:rounded-t-none"
+      />
+      <div class="px-8 md:w-7/12 flex flex-col justify-between">
+        <h2 class="font-bold md:text-lg text-[var(--VeryDarkGrayishBlue)] pt-8 ">
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h2>
+
+        <p class="py-3 text-sm md:text-xs text-[var(--DesaturatedDarkBlue)] font-medium leading-relaxed">
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
+        <div class="profile flex items-center space-x-4 h-12">
+          <img
+            src="../images/avatar-michelle.jpg"
+            alt="michelle photo"
+            class="w-11 h-11 rounded-full md:w-9 md:h-9"
+          />
+          <div class="flex flex-col">
+            <h4
+              class="text-[var(--VeryDarkGrayishBlue)] font-medium leading-tight"
+            >
+              Michelle Appleton
+            </h4>
+            <p class="text-[var(--GrayishBlue)] text-sm leading-tight">
+              28 Jun 2020
+            </p>
+          </div>
+          <button
+            class="btn bg-[var(--GrayishBlue)] rounded-full w-7 h-7 flex justify-center items-center ml-auto mr-3 transform hover:scale-125 transition duration-300 cursor-pointer "
+            onclick="shareshow()"
+            aria-label="Share"
+          >
+            <img src="../images/icon-share.svg" alt="share icon" />
+          </button>
+        </div>
+      </div>
+      </div>
+      <div
+            class="share bg-[var(--VeryDarkGrayishBlue)] hidden w-xs h-14  rounded-b-lg  items-center pl-6 md:z-10  md:w-60 md:h-9 md:absolute md:top-72 md:shadow-lg md:right-[17.5rem] md:rounded-lg md:after:content-[''] md:after:absolute md:after:top-9 md:after:left-[48%] md:after:-translate-x-1/2 after:border-8 after:border-transparent after:border-t-[var(--VeryDarkGrayishBlue)]"
+          >
+            <p
+              class="uppercase tracking-widest text-[var(--DesaturatedDarkBlue)] ml-3"
+            >
+              Share
+            </p>
+            <img src="../images/icon-facebook.svg" alt="" class="p-3 transform hover:scale-125 transition duration-300 cursor-pointer" />
+            <img src="../images/icon-twitter.svg" alt="" class="p-3 transform hover:scale-125 transition duration-300 cursor-pointer" />
+            <img src="../images/icon-pinterest.svg" alt="" class="p-3 transform hover:scale-125 transition duration-300 cursor-pointer" />
+            <span
+              class="bg-[var(--GrayishBlue)] rounded-full ml-8 w-8 h-8 flex justify-center items-center"
+            >
+              <img
+                src="../images/icon-share.svg"
+                class="text-white transform hover:scale-125 transition duration-300 cursor-pointer"
+                onclick="sharehide()"
+              />
+            </span>
+          </div>
+    
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">hamza tchiche</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
